@@ -4,24 +4,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <body>
   <section id="content">
-      Everything has been composed, just not yet written down.
+      <div class="quote">Everything has been composed, just not yet written down.</div>
+      <cite>Albert Einstein</cite>
   </section>
 </body>
 <style>
-    body {
-        height: 100%;
+    html {
         color: #ffffff;
         background-color: #000000;
-        background: url(albert-einstein.jpg) no-repeat;
+        background: url(albert-einstein.jpg) no-repeat center center fixed;
         background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
+
+    body {
+        height: 100%;
+    }
+
+
     #content {
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+    }
+
+    #content .quote {
+        position: relative;
+        top: 40%;
         text-align: center;
-        margin: 10em auto;
-        font-family: 'Open Sans', 'Helvetica Neue';
-        font-size: 30px;
+        height: 1em;
+        line-height: 1em;
+        font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+        font-size: 34px;
         font-weight: 100;
         -webkit-font-smoothing: antialiased;
+    }
+
+    #content cite {
+        float: right;
+        position: relative;
+        top: 50%;
     }
 </style>
 </html>
