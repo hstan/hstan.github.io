@@ -1,0 +1,59 @@
+body {
+    height: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    background: url(albert-einstein.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /*-webkit-filter: blur(4px);*/
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /*-webkit-animation-name: bgblur;*/
+    /*-webkit-animation-delay: 5s;*/
+    /*-webkit-animation-duration: 10s;*/
+    /*-webkit-animation-iteration-count: 1;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+}
+
+@-webkit-keyframes bgblur {
+  from {
+    -webkit-filter: blur(0);
+  }
+  to {
+    -webkit-filter: blur(10px);
+  }
+}
+
+#content {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+
+#content .quote {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    height: 3em;
+    line-height: 1em;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 34px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+}
+
+#content cite {
+    float: right;
+    position: relative;
+    top: 50%;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    #content cite {
+        position: relative;
+        top: 55%;
+        text-align: center;
+    }
+}
